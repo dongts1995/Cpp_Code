@@ -33,4 +33,45 @@ Deadlock là một tình huống trong lập trình multi-thread hoặc multi-pr
 
 # Mutex và Condition Variables
 
-##
+## Sự khác biệt giữa `mutex` và `recursive_mutes`:
+## Khi nào nên sử dụng `recursive_mutex`:
+## Hiện tượng khi lock một `mutex` đang bị lock bởi thread khác:
+## Hiện tượng khi lock một `mutex` đang bị lock bởi thread hiện tại:
+## Hiện tượng khi lock một `recursive_mutex` đang bị lock bởi thread hiện tại:
+## `condition_variable`
+## `wait()`, `notify_one()`, `notify_all()` trong `condition_variable`
+
+# Atomic Operations và Memory Ordering
+
+## Phân biệt `atomic` và `mutex`:
+## Các loại memory ordereing trong `atomic`:
+
+# Thread Safety và Synchronization
+
+## Thread-Safe
+## Class Thread-safe
+## double-checked locking pattern
+## Vấn đề double-checked locking pattern trong C++11
+## Khắc phục: Sử dụng atomic, mutex, call_once, once_flag
+
+# Thread Pools và Task-based Parallelism
+
+## Thread Pools:
+## task-based parallelism (ví dụ: std::async, std::future, std::promise) và thread-based parallelism
+
+# Advanced Thread Synchronization Techniques
+
+## Cơ chế Lock-Free trong Lập Trình Đa Luồng
+## Compare-And-Swap (CAS):
+## Wait-Free:
+## Livelock là gì và nó khác gì với Deadlock?
+## Cách tránh Livelock:
+
+# Thread Local Storage (TLS)
+
+# Parallelism and Concurrency Patterns
+
+## Fork-Join Model là gì?
+## C++ hỗ trợ Fork-Join như thế nào?
+## Work-Stealing Algorithm là gì?
+
